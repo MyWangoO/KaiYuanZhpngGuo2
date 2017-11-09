@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <padding
+        android:bottom="12dp"
+        android:left="12dp"
+        android:right="12dp"
+        android:top="12dp" />
+    <!--设置圆角-->
+    <corners android:radius="200dp" />
+    <!--stroke设置描边-->
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/darker_gray" />
+    <gradient
+        android:centerColor="#b0375242"
+        android:endColor="#b0375242"
+        android:startColor="#b0375242" />
+</shape>

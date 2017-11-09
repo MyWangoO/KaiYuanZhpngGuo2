@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/zongh_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/jia_but">
+
+        </android.support.design.widget.TabLayout>
+        -
+
+        <LinearLayout
+            android:id="@+id/tab_pop_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tab_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="切换栏目" />
+
+            <TextView
+                android:id="@+id/tab_remove"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/pop_item"
+                android:gravity="center"
+                android:text="排序删除"
+                android:textColor="#12ea46" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/jia_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_subscribe" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/zongh_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kaiyuanzhongguo.View.WoDeActivity.SheZhiActivity">
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/shezhi_toolbar"
+        android:background="#1fce57"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:background="#e2ece9"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"></LinearLayout>
+    <TextView
+        android:background="#4f000000"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+    <LinearLayout
+        android:id="@+id/shezhi_qingchu"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:text="清除缓存"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/shezhi_shuju"
+            android:layout_margin="15dp"
+            android:text="3.63MB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:background="#4f000000"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/shezhi_tuichu"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:text="双击退出"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:layout_weight="1" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/shezhi_qiehuan"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:src="@drawable/on"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="40dp" />-->
+    </LinearLayout>
+    <TextView
+        android:background="#4f000000"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+    <LinearLayout
+        android:background="#e2ece9"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"></LinearLayout>
+    <TextView
+        android:background="#4f000000"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/shezhi_yijian"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:text="意见反馈"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:background="#4f000000"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+        <TextView
+            android:id="@+id/shezhi_guanyu"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:text="关于我们"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:background="#4f000000"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+        <TextView
+            android:id="@+id/shezhi_gengxin"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:text="检查更新"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:background="#4f000000"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+    <LinearLayout
+        android:background="#e2ece9"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"></LinearLayout>
+    <TextView
+        android:background="#4f000000"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+    <TextView
+        android:id="@+id/shezhi_zhuxiao"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:text="注销"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:background="#4f000000"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
+</LinearLayout>

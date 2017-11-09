@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hdxq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liu.administratorexample.kaiyuanzhongguo.activity.HDXQActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#12ea46">
+
+        <ImageView
+            android:id="@+id/xiang_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/ic_brows_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:text="资讯详情"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_menu_comment" />
+
+            <TextView
+                android:id="@+id/xiang_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="10"
+                android:textColor="#fff"
+                android:layout_marginLeft="5dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/xiang_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@drawable/info_item"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/ic_comment_30"/>
+
+            <EditText
+                android:id="@+id/item_info_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="12dp"
+                android:layout_toRightOf="@id/iv"
+                android:background="#ffff"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:editable="false"
+                android:hint="发表评论"/>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/item_info_enshrine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/ic_fav_normal"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:background="@mipmap/ic_share_black_normal"/>
+    </LinearLayout>
+</LinearLayout>

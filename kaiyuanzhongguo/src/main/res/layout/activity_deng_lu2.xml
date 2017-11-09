@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_login"
+    tools:context="com.example.kaiyuanzhongguo.View.WoDeActivity.DengLuActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_denglu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+    <ImageView
+
+        android:src="@drawable/logo_osc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_ed">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_singup_mobile"/>
+        <EditText
+            android:textColor="#ffff"
+            android:id="@+id/zhanghao_denglu"
+            android:textColorHint="#ffff"
+            android:background="@null"
+            android:hint="手机号或者邮箱"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/qingchu1_denglu"
+            android:src="@mipmap/ic_clear"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_ed">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_login_password"/>
+        <EditText
+            android:textColor="#ffff"
+            android:id="@+id/mima_denglu"
+            android:textColorHint="#ffff"
+            android:background="@null"
+            android:hint="密码"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/qingchu2_denglu"
+            android:src="@mipmap/ic_clear"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/wangji_denglu"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="right"
+        android:text="忘记密码？"
+        android:textColor="#8fc610"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/denglu_denglu"
+        android:text="登陆"
+        android:textColor="#ffff"
+        android:layout_margin="20dp"
+        android:background="@drawable/login_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/zhuce_denglu"
+        android:text="注册"
+        android:textColor="#ffff"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/login_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/disanfang"
+        android:text="第三方登陆"
+        android:textColor="#8fc610"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
