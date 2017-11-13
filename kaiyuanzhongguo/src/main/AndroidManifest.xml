@@ -25,8 +25,8 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <!--扫一扫-->
-<!--    <uses-permission android:name="android.permission.CAMERA" />-->
+    <!-- 扫一扫 -->
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
 
     <uses-feature android:name="android.hardware.camera" />
@@ -86,7 +86,7 @@
             android:name="Mob-AppSecret"
             android:value="0f6ddf18f8f69bbb3fa8f1b29967c138" />
 
-        <!--扫一扫-->
+        <!-- 扫一扫 -->
         <activity
             android:name=".zxing.activity.CaptureActivity"
             android:screenOrientation="portrait"
@@ -95,7 +95,6 @@
             android:name=".zxing.activity.ResultActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" />
-
         <activity android:name=".View.HomeActivity" />
         <activity android:name=".View.SouSuoActivity" />
         <activity android:name=".View.FaXianActivity.MaYunTuiJianActivity" />
@@ -120,9 +119,7 @@
         <activity android:name=".View.ZhongHeActivity.ZiXunXiangQingActivity" />
         <activity android:name=".View.DongTanActivity.DongTanXiangQingActivity" />
         <activity android:name=".View.WoDeActivity.ZhuCeActivity" />
-        <activity android:name=".View.ZhongHeActivity.BoKeXiangQingActivity"></activity>
-
-
+        <activity android:name=".View.ZhongHeActivity.BoKeXiangQingActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -131,8 +128,10 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
+                android:resource="@xml/provider_paths" />
         </provider>
+
+        <activity android:name=".View.WoDeActivity.WanSanActivity"></activity>
     </application>
 
 </manifest>

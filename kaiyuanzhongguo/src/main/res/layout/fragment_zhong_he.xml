@@ -3,29 +3,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/lin"
     tools:context=".Fragment.Zhu.ZhongHeFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="30dp"
+        android:orientation="horizontal">
         <android.support.design.widget.TabLayout
-            android:id="@+id/tab1"
-            android:background="#f5f5f5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            </android.support.design.widget.TabLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/tab1"></android.support.design.widget.TabLayout>
         <TextView
-            android:id="@+id/tianjia"
-            android:text="+"
-            android:textSize="35sp"
+            android:id="@+id/qie"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_centerVertical="true"
+            android:text="切换栏目"/>
+        <TextView
+            android:id="@+id/dele"
+            android:layout_toLeftOf="@+id/biao"
+            android:text="排序删除"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/biao"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_subscribe"
+            android:layout_below="@+id/qie"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
+            android:layout_alignParentEnd="true" /></RelativeLayout>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp1"

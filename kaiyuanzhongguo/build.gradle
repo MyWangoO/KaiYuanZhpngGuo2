@@ -58,4 +58,7 @@ dependencies {
     compile(name: 'SMSSDK-3.0.0', ext: 'aar')
     compile(name: 'SMSSDKGUI-3.0.0', ext: 'aar')
     compile files('libs/zxing.jar')
+    //刷新加载依赖
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'//没有使用特殊Header，可以不加这行
 }

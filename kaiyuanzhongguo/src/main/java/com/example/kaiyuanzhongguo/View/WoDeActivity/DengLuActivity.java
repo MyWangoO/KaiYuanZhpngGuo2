@@ -1,6 +1,7 @@
 package com.example.kaiyuanzhongguo.View.WoDeActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -79,7 +80,18 @@ public class DengLuActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.denglu_denglu:
-                Toast.makeText(DengLuActivity.this, "能点击", Toast.LENGTH_SHORT).show();
+                SharedPreferences xinxi = getSharedPreferences("xinxi", 0);
+                String zhanghao = xinxi.getString("zhanghao", "z");
+                String mima = xinxi.getString("mima", "m");
+
+                String s1 = zhanghao_denglu.getText().toString().trim();
+                String s2 = mima_denglu.getText().toString().trim();
+
+                if (s1.equals(zhanghao)&&s2.equals(mima)){
+                    Toast.makeText(DengLuActivity.this, "账号密码正确", Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(DengLuActivity.this, "账号密码不正确", Toast.LENGTH_SHORT).show();
+                }
                 break;
             case R.id.zhuce_denglu:
                 Intent intent = new Intent(this, ZhuCeActivity.class);
@@ -165,7 +177,7 @@ public class DengLuActivity extends AppCompatActivity implements View.OnClickLis
                 if (charSequence.length() != 0 && !TextUtils.isEmpty(zhanghao_denglu.getText().toString())) {
                     denglu_denglu.setEnabled(true);
                     denglu_denglu.setBackgroundDrawable(getResources().getDrawable(R.drawable.login_btn));
-                    Toast.makeText(DengLuActivity.this, "成功", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(DengLuActivity.this, "成功", Toast.LENGTH_SHORT).show();
                 }
             }
 

@@ -1,5 +1,6 @@
 package com.example.kaiyuanzhongguo.View.WoDeActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -48,8 +49,9 @@ public class ZhuCeActivity extends AppCompatActivity implements View.OnClickList
                 } else {
                     if (event == SMSSDK.EVENT_GET_VERIFICATION_CODE) {
                     } else if (event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE) {
-                        //注册成功的逻辑
-                        Log.i("login", "验证成功");
+                        Intent intent = new Intent(ZhuCeActivity.this,WanSanActivity.class);
+                        intent.putExtra("shoujihao",shoujihao_zhuce.getText().toString());
+                        startActivity(intent);
                         finish();
                     }
                 }
@@ -95,4 +97,5 @@ public class ZhuCeActivity extends AppCompatActivity implements View.OnClickList
                 break;
         }
     }
+
 }
